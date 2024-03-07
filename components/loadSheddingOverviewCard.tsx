@@ -6,13 +6,17 @@ type Props = {
     suburbName: string;
     time: { start?: string, end?: string, stage?: number };
     id: string;
-    alertStatus?: any
+    alertStatus?: any;
+    eventTime: string
 }
 
-const LoadSheddingOverviewCard: React.FC<Props> = ({ date, suburbName, time, alertStatus }) => {
+const LoadSheddingOverviewCard: React.FC<Props> = ({
+    date,
+    suburbName,
+    time,
+    alertStatus,
+    eventTime }) => {
     const timeInstance = Time.createDate(date);
-    console.log(time === null);
-
     return (
         <div className="flex justify-center items-center pt-2 pl-1 md:w-screen md:justify-center">
 
@@ -33,7 +37,7 @@ const LoadSheddingOverviewCard: React.FC<Props> = ({ date, suburbName, time, ale
                                     <path strokeLinecap="round" strokeLinejoin="round" d="m3.75 13.5 10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75Z" />
                                 </svg>
 
-                                <p className="flex font-bold text-gray-700 pl-1">Stage 2</p>
+                                <p className="flex font-bold text-gray-700 pl-1">{`Stage ${time.stage}`}</p>
                             </div>
                             <div className="flex">
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-6 h-6 text-gray-500">
@@ -54,7 +58,7 @@ const LoadSheddingOverviewCard: React.FC<Props> = ({ date, suburbName, time, ale
 
                         <div className="ml-2">
                             <p className="font-bold text-gray-700">{suburbName}</p>
-                            {time.start != undefined ? <p className="font-medium text-[blue]">(2 hours ago)</p> : ''}
+                            {/* {time.start != undefined ? <p className="font-medium text-[blue] float-right">{`(${eventTime})`}</p> : ''} */}
                         </div>
                     </div>
                 </div>

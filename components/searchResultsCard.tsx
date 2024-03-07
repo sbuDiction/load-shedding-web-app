@@ -7,7 +7,12 @@ type LoadingState = {
     state: boolean
 }
 
-const SearchResultsCard: React.FC<Area> = ({ name, region, block, sid, handleSubscription }) => {
+const SearchResultsCard: React.FC<Area> = ({
+    name,
+    region,
+    block,
+    sid,
+    handleSubscription }) => {
     const [isLoading, setLoading] = useState<LoadingState>({ state: false });
     const handleSubscribe = () => {
         setLoading({ state: !isLoading.state });
@@ -29,7 +34,7 @@ const SearchResultsCard: React.FC<Area> = ({ name, region, block, sid, handleSub
                 <div className="text-sm font-medium text-gray-900">{name}</div>
                 <div className="text-xs text-gray-500">{region}</div>
             </div>
-            
+
             <div className="ml-auto">
 
                 <button onClick={handleSubscribe} className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
