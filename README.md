@@ -1,6 +1,6 @@
 <!-- Improved compatibility of back to top link: See: https://github.com/othneildrew/Best-README-Template/pull/73 -->
 
-<a name="readme-top"></a>
+<a name="readme-top" id="readme-top"></a>
 
 <!--
 *** Thanks for checking out the Best-README-Template. If you have a suggestion
@@ -60,19 +60,19 @@
         <li><a href="#built-with">Built With</a></li>
       </ul>
     </li>
-    <li>
+    <!-- <li>
       <a href="#getting-started">Getting Started</a>
-      <ul>
+       <ul>
         <li><a href="#prerequisites">Prerequisites</a></li>
         <li><a href="#installation">Installation</a></li>
       </ul>
-    </li>
-    <li><a href="#usage">Usage</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
-    <li><a href="#contributing">Contributing</a></li>
-    <li><a href="#license">License</a></li>
+    </li> -->
+    <!-- <li><a href="#usage">Usage</a></li> -->
+    <!-- <li><a href="#roadmap">Roadmap</a></li> -->
+    <!-- <li><a href="#contributing">Contributing</a></li> -->
+    <!-- <li><a href="#license">License</a></li> -->
     <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgments">Acknowledgments</a></li>
+    <!-- <li><a href="#acknowledgments">Acknowledgments</a></li> -->
   </ol>
 </details>
 
@@ -84,7 +84,7 @@
 
 ![](./images/home.png)
 
-<!-- Here's a blank template to get started: To avoid retyping too much info. Do a search and replace with your text editor for the following: `github_username`, `repo_name`, `sbudiction`, `linkedin_username`, `gmail`, `sibusisonkosi0897`, `project_title`, `project_description` -->
+<!-- The web app helps the user know Load Sheddi -->
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -107,7 +107,6 @@
 - [ ] Get push notifications about Load Shedding
 
 See the [open issues][issues-url] for a full list of proposed features (and known issues).
-
 
 <!-- GETTING STARTED -->
 
