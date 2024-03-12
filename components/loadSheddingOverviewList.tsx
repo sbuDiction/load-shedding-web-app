@@ -146,7 +146,7 @@ const LoadSheddingOverviewList = () => {
         ))
       ) : (
         <div className="subscribe-message">
-          <p>Looks like you haven't subscribed to any suburbs yet!</p>
+          <p>Looks like you havent subscribed to any suburbs yet{"!"}</p>
           <p>
             Subscribe to receive updates on the latest{" "}
             <span className="font-bold">Load Shedding</span> in your areas of
