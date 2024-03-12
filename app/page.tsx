@@ -1,7 +1,9 @@
-"use client"
+"use client";
 import ScheduleAPI from "@/api/schedul.api";
 import SearchAPI from "@/api/search.api";
-import LoadSheddingOverviewList, { ScheduleOverview } from "@/components/loadSheddingOverviewList";
+import LoadSheddingOverviewList, {
+  ScheduleOverview,
+} from "@/components/loadSheddingOverviewList";
 import NavigationBar from "@/components/navbar";
 import SearchResults from "@/components/searchResults";
 import { ResultsType } from "@/types/results";
@@ -14,27 +16,30 @@ export default function Home() {
   const handleIsSearch = (data: any) => {
     setIsSearch(true);
     setResults(data);
-  }
+  };
 
   const handleSubscription = () => {
-    setIsSearch(false)
-  }
+    setIsSearch(false);
+  };
 
   return (
     <>
       <div className="main_layout">
         <NavigationBar liftSearchResults={handleIsSearch} />
         <div className="container">
-          {isSearch ?
+          {isSearch ? (
             <div className="search_results">
-              <SearchResults handleSubscription={handleSubscription} suburbs={results.suburbs} />
+              <SearchResults
+                handleSubscription={handleSubscription}
+                suburbs={results.suburbs}
+              />
             </div>
-            :
+          ) : (
             <LoadSheddingOverviewList />
-          }
+          )}
           <div></div>
         </div>
       </div>
     </>
-  )
+  );
 }

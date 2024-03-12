@@ -32,3 +32,12 @@ body {
 .test {
   color: rgb(255, 255, 255);
 }
+
+.subscribe-message {
+  color: black;
+  @apply fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white px-8 py-6 rounded-lg shadow-md;
+}
+
+.btn-subscribe {
+  @apply inline-block px-4 py-2 bg-blue-500 text-white font-bold rounded-lg hover:bg-blue-700;
+}
