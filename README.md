@@ -37,7 +37,7 @@
 <h3 align="center">PowerPeak</h3>
 
   <p align="center">
-    PowerPeak is a web app for viewing Load Shedding schedules, the app uses a Load Shedding API custom built. The uses all the API features like getting the current Load Shedding status for your suburb/area.
+    PowerPeak is a web app for viewing Load Shedding schedules, the app uses a custom built Load Shedding API. The uses all the API features like getting the current Load Shedding status for your suburb/area.
     <br />
     <!-- <a href="https://github.com/github_username/repo_name"><strong>Explore the docs »</strong></a> -->
     <br />
